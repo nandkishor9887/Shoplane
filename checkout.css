@@ -1,0 +1,133 @@
+main{
+    width: 100%;
+    min-height: 80vh;
+    box-sizing: border-box;
+    margin-top: 100px;
+    padding-bottom: 8%;
+}
+#checkout-section{
+    padding: 2% 8%;
+    box-sizing: border-box;
+}
+#heading{
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 48px;
+}
+#selected-products{
+    display: flex;
+    justify-content: start;
+}
+#product-cards{
+    width: 50%;
+}
+#selected-products > div:last-of-type{
+    width: 50%;
+    height: fit-content;
+    margin-top: 48px;
+    margin-left: 3%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px #ccc;
+    border-radius: 5px;
+    padding: 16px;
+}
+.total-items{
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 16px;
+}
+.product-card{
+    display: flex;
+    justify-content: start;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px #ccc;
+    border-radius: 5px;
+    background-color: white;
+    max-width: 600px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+.product-img{
+    width: 80px;
+    min-width: 80px;
+    border-radius: 5px;
+    margin-right: 16px;
+}
+.product-card  h4{
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 4px;
+    font-size: 18px;
+}
+.product-card p{
+    margin: 0;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.section-heading{
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 16px;
+}
+#total-cost{
+    color: black;
+    opacity: 0.8;
+    font-size: 24px;
+    font-weight: 800;
+    margin-left: 4px;
+}
+#place-order-btn{
+    background-color: #009688;
+    font-size: 18px;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    padding: 18px 36px;
+    border-radius: 6px;
+    margin-top: 36px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+@media screen and (max-width: 479px){
+    #checkout-section{
+        padding:  0 20px;
+    }
+    #heading{
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .total-items{
+        font-size: 20px;
+    }
+    #selected-products{
+        flex-direction: column;
+    }
+    #product-cards{
+        width: 100%;
+    }
+    #selected-products > div:last-of-type{
+        margin-top: 20px;
+        margin-left: 0;
+        width: 100%;
+    }
+    .section-heading{
+        font-size: 20px;
+    }
+    #selected-products > div:last-of-type > p{
+        font-size: 18px;
+    }
+    #total-cost{
+        font-size: 18px;
+    }
+    #place-order-btn{
+        width: 100%;
+        margin-top: 18px;
+    }
+}
+
